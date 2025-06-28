@@ -25,7 +25,7 @@ rateButtonsEl.forEach(function(rateButton) {
 
 
 
-const ratingMsg = selectedEl;
+//const ratingMsg = selectedEl;
 selectedEl.textContent = `You selected ${ratingValue} out of 5`;
 
 function submit() {
