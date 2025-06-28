@@ -13,24 +13,17 @@ let ratingValue = null;
 
 rateButtonsEl.forEach(function(rateButton) {
     rateButton.addEventListener("click", function() {
-        // rateButtonsEl.forEach(function(rateButton) {
-            rateButton.classList.add("active");
-            rateButton.classList.remove("active");
-            ratingValue = rateButton.getAttribute("value");
-        // });
+            
+        ratingValue = rateButton.getAttribute("value");
+
+        selectedEl.textContent = `You selected ${ratingValue} out of 5`;
+        
+        if(ratingValue) {
+            errorMsg.textContent = "";
+        }
     });
 });
 
-
-
-
-
-//const ratingMsg = selectedEl;
-selectedEl.textContent = `You selected ${ratingValue} out of 5`;
-
-function submit() {
-    
-}
 
 submitButtonEl.addEventListener("click", function(){
     if(ratingValue){

@@ -82,10 +82,14 @@ h1 {
     cursor: pointer;
 }
 
-.rate-button:hover,
-.rate-button:focus {
+.rate-button:hover {
     background-color: var(--orange-500);
     transition: 0.1s ease-out;
+}
+
+.rate-button:focus {
+    background-color: var(--white);
+    color: var(--grey-900);
 }
 
 .active {
@@ -94,18 +98,13 @@ h1 {
 }
 
 .submit-button {
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
     grid-row: 6;
     grid-column: 2;
-    /* padding: 5px 40px; */
     background-color: var(--orange-500);
     border-radius: 20px;
     font-weight: 700;
     color: var(--grey-900);
     border: none;
-    /* box-shadow: 4px 4px 10px #000; */
 }
 
 .error-msg {
@@ -134,7 +133,6 @@ h1 {
     grid-column: 2;
     margin: 0 auto;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
