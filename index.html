@@ -16,10 +16,10 @@
 </head>
 <body>
     <!-- Rating State Starts -->
-    <div class="rating-container hidden">
+    <div class="rating-container">
         <img src="img/icon-star.svg" alt="star icon" />
         <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <p class="rating-p">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
         <!-- <input type="radio" id="button-1" name="button-list" value="1">
         <label for="button-1">1</label><br>
@@ -33,25 +33,26 @@
         <label for="button-5">5</label><br> -->
 
         <ul>
-            <li><button class="rate-button">1</button></li>
-            <li><button class="rate-button">2</button></li>
-            <li><button class="rate-button">3</button></li>
-            <li><button class="rate-button">4</button></li>
-            <li><button class="rate-button">5</button></li>
+            <li><button class="rate-button" value="1">1</button></li>
+            <li><button class="rate-button" value="2">2</button></li>
+            <li><button class="rate-button" value="3">3</button></li>
+            <li><button class="rate-button" value="4">4</button></li>
+            <li><button class="rate-button" value="5">5</button></li>
         </ul>
-        <button class="submit-button">SUBMIT</button>
+        <button type="submit" class="submit-button">SUBMIT</button>
+        <p class="error-msg"></p>
     </div>
     <!-- Rating State Ends -->
 
     <!-- Thank State Starts -->
-    <div class="thank-container">
+    <div class="thank-container hidden">
         <img src="img/illustration-thank-you.svg" alt="mobile phone" />
-        <p class="selected">You selected <span>0</span> out of 5</p>
+        <p class="selected">You selected 0 out of 5</p>
         <h1>Thank you!</h1>
         <p class="p-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </div>
     <!-- Thank State Ends -->
 
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 </body>
 </html>

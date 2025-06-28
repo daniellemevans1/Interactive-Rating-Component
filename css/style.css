@@ -60,7 +60,7 @@ h1 {
     font-size: 1.25rem;
 }
 
-.rating-container p {
+.rating-p {
     grid-row: 4;
     grid-column: 2;
 }
@@ -79,6 +79,18 @@ h1 {
     color: var(--grey-500);
     padding: 15px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.rate-button:hover,
+.rate-button:focus {
+    background-color: var(--orange-500);
+    transition: 0.1s ease-out;
+}
+
+.active {
+    background-color: var(--white);
+    color: var(--grey-900);
 }
 
 .submit-button {
@@ -93,11 +105,21 @@ h1 {
     font-weight: 700;
     color: var(--grey-900);
     border: none;
+    /* box-shadow: 4px 4px 10px #000; */
+}
+
+.error-msg {
+    grid-row: 7;
+    grid-column: 2 /4;
+    color: red;
+    margin-top: 6px;
 }
 
 .submit-button:hover,
 .submit-button:focus {
     background-color: var(--white);
+    cursor: pointer;
+    transition: 0.1s ease-out;
 }
 
 .thank-container {
